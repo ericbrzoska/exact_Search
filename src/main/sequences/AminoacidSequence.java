@@ -1,6 +1,14 @@
 package sequences;
 
-public class AsciiSequence implements Sequence {
+public class AminoacidSequence extends Exceptions implements Sequence{
+    String sequence;
+    String name;
+    String alphabet;
+    public AminoacidSequence(String name, String seq) {
+    super();
+
+    }
+
     @Override
     public String getSequence() {
         return null;

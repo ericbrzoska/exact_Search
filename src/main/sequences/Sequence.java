@@ -9,7 +9,7 @@ public interface Sequence {
      * @param c
      * @return
      */
-    public int indexOf(char c);
+    public int indexOf(char c); //Todo Exception bei alphabetfremden Zeichen?
     public int alphabetSize();
     public String getAlphabetString();
 }
