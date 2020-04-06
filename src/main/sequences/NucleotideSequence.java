@@ -30,12 +30,8 @@ public class NucleotideSequence extends Exceptions implements Sequence {    //ac
     }
 
     @Override
-    public int indexOf(char c) {    //TODO Fehler muss in den Algorithmen abgefangen werden. hier dank verplichteten return nicht möglich
-        if(alphabet.indexOf(Character.toString(c))<-1)
-            return alphabet.indexOf(Character.toString(c));
-        else {wrong_alphabet();
-        return -1;
-        }
+    public int indexOf(char c) {    //TODO Fehler muss in den Algorithmen abgefangen werden. hier dank verplichteten return nicht möglich (-1 wenn Alphabetfremdes Zeichen)
+        return alphabet.indexOf(Character.toString(c));
     }
 
     @Override

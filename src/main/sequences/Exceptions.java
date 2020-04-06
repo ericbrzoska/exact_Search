@@ -1,6 +1,6 @@
 package sequences;
 
-public abstract class Exceptions {
+public abstract class Exceptions {  //todo in sequenceklassen nicht anwendbar, muss verschoben werden
 
     public Exceptions(){
 

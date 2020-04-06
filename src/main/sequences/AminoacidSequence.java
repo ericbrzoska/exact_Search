@@ -1,41 +1,43 @@
 package sequences;
 
 public class AminoacidSequence extends Exceptions implements Sequence{
-    String sequence;
-    String name;
-    String alphabet;
+    private String sequence;
+    private String name;
+    private String alphabet;
     public AminoacidSequence(String name, String seq) {
     super();
-
+    this.sequence=seq.toUpperCase();
+    this.name=name;
+    alphabet="ARNDCQEGHILKMFPSTWYV";
     }
 
     @Override
     public String getSequence() {
-        return null;
+        return sequence;
     }
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public char charAt(int a) {
-        return 0;
+        return sequence.charAt(a);
     }
 
     @Override
     public int indexOf(char c) {
-        return 0;
+        return alphabet.indexOf(Character.toString(c));
     }
 
     @Override
     public int alphabetSize() {
-        return 0;
+        return alphabet.length();
     }
 
     @Override
     public String getAlphabetString() {
-        return null;
+        return alphabet;
     }
 }
