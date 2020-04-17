@@ -11,8 +11,10 @@ public class FastaReader {  //TODO Exception empty File
     private String header;
     private String sequence;
     private static String s="";
+    private String path;
 
     public FastaReader(String path){
+        this.path=path;
         int i=0;
         file= new File(path);
         sb= new StringBuilder();
@@ -39,6 +41,10 @@ public class FastaReader {  //TODO Exception empty File
 
     public String getSequence(){
         return sequence;
+    }
+
+    public String getPath(){
+        return path;
     }
 
 }
